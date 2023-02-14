@@ -1,6 +1,6 @@
 # Pricing component with toggle
 
-This is a solution to the [Pricing component with toggle challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC)
+This is a solution to the [Pricing component with toggle challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/pricing-component-with-toggle-8vPwRMIC).
 
 ## Table of contents
 
@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution](https://your-solution-url.com)
-- Live Site URL: [site](https://your-live-site-url.com)
+- Solution URL: [solution](https://github.com/Ibrahim-003/PricingComponent)
+- Live Site URL: [site](https://ibrahim-003.github.io/PricingComponent/)
 
 ## My process
 
