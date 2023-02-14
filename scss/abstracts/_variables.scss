@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+// primary colors
+$lPurple: hsl(237, 63%, 64%);
+$vlGrayishB: hsl(240, 78%, 98%);
+$iGrayishB: hsl(234, 14%, 74%);
+$GrayishB: hsl(233, 13%, 49%);
+$dGrayishB: hsl(232, 13%, 33%);
+
+// neutral
+$white: hsl(0, 0%, 100%);
+
+// font family
+$primaryFont: "Montserrat", sans-serif;
+
+// gradient backgrounds
+$primaryBackground: hsl(236, 72%, 79%), hsl(237, 63%, 64%);
+
+// image backgrounds
+$bgImageTop: url("../../images/bg-top.svg");
+$bgImageBottom: url("../../images/bg-bottom.svg");
+
+// custom properties for css
+:root {
+  --primaryBackground: #{$primaryBackground};
+  --bgImageTop: #{$bgImageTop};
+  --bgImageBottom: #{$bgImageBottom};
+  --white: #{$white};
+  --lPurple: #{$lPurple};
+  --vlGrayishB: #{$vlGrayishB};
+  --iGrayishB: #{$iGrayishB};
+  --GrayishB: #{$GrayishB};
+  --dGrayishB: #{$dGrayishB};
+  --font-p: #{$primaryFont};
+}
+
+// Breakpoints
+$breakpoints: (
+  "small": 320px,
+  "medium": 600px,
+  "large": 768px,
+  "huge": 1024px,
+);

@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: var(--font-p);
+  color: var(--GrayishB);
+  background-color: var(--vlGrayishB);
+  min-height: 100vh;
+}

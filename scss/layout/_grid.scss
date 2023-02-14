@@ -1,0 +1,73 @@
+@import "../abstracts";
+
+.root-container {
+  $large: map-get($breakpoints, "large");
+  $huge: map-get($breakpoints, "huge");
+
+  @include media-query($large) {
+    background: {
+      image: var(--bgImageTop), $bgImageBottom;
+      repeat: no-repeat;
+      position: top -30px right -100px, bottom -30px left -100px;
+    }
+  }
+
+  @include media-query($huge) {
+    background: {
+      image: var(--bgImageTop), $bgImageBottom;
+      repeat: no-repeat;
+      position: top right, bottom left;
+    }
+  }
+
+  background: {
+    image: var(--bgImageTop);
+    repeat: no-repeat;
+    position: top -45px right -200px;
+  }
+}
+
+.card-container_grid {
+  display: grid;
+  width: min(100%, 1230px);
+  grid-template: repeat(3, auto) / 1fr;
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  padding: 1rem;
+
+  @each $size, $breakpoint in $breakpoints {
+    @if $size == "medium" {
+      @include media-query($breakpoint) {
+        grid-template: repeat(2, auto) / repeat(4, 1fr);
+        grid-template-areas:
+          ". itemS itemS ."
+          "itemF itemF itemT itemT";
+
+        .card_grid_itemF {
+          grid-area: itemF;
+        }
+
+        .card_grid_itemS {
+          grid-area: itemS;
+        }
+
+        .card_grid_itemT {
+          grid-area: itemT;
+        }
+      }
+    } @else if $size == "large" {
+      @include media-query($breakpoint) {
+        grid-template: auto / repeat(3, 1fr);
+        grid-template-areas: "itemF itemS itemT";
+        gap: 0;
+      }
+    } @else {
+      @include media-query($breakpoint) {
+        .card_height_active {
+          height: 110%;
+        }
+      }
+    }
+  }
+}

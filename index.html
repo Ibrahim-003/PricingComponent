@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./dist/style.css">
+
+    <title>Pricing Component</title>
+
+</head>
+
+<body>
+    <div class="root-container">
+        <main class="main main_bg main_align_vertical main_space_in main_size">
+            <h1 class="main__title">Our Pricing </h1>
+            <div class="main__toggle-master">
+                <span class="main__plan">Annually</span>
+                <div class="toggle-btn">
+                    <label for="btn-price" class="toggle-btn__container">
+                        <input type="checkbox" id="btn-price" name="plan" class="toggle-btn__input">
+                        <span class="toggle-btn__slider"></span>
+                    </label>
+                </div>
+                <span class="main__plan">Monthly</span>
+            </div>
+            <div class="mai__card-container card-container card-container_grid">
+                <article class="card card_grid_itemF card_theme_regular card_alignment_vertical
+                card_width_m">
+                    <h2 class="card__plan">Basic</h2>
+                    <h3 class="card__price card__price_color_dark" data-plan="basic">
+                        19.99
+                    </h3>
+                    <ul class="card-characteristics card-characteristics_align_vertical">
+                        <li class="card-characteristics__item">500 GB Storage</li>
+                        <li class="card-characteristics__item card-characteristics__item_middle">2 Users Allowed</li>
+                        <li class="card-characteristics__item">Send up to 3 GB</li>
+                    </ul>
+                    <button class="card__button card__button_theme_regular card__button_font">Learn More</button>
+                </article>
+                <article class="card card_grid_itemS card_theme_active card_alignment_vertical
+                card_width_m
+                card_height_active">
+                    <h2 class="card__plan">Professional</h2>
+                    <h3 class="card__price card__price_color_light" data-plan="professional">
+                            24.99
+                    </h3>
+                    <ul class="card-characteristics card-characteristics_align_vertical">
+                        <li class="card-characteristics__item">1 TB Storage</li>
+                        <li class="card-characteristics__item card-characteristics__item_middle">5 Users Allowed</li>
+                        <li class="card-characteristics__item">Send up to 10 GB</li>
+                    </ul>
+                    <button class="card__button card__button_theme_active card__button_font">Learn More</button>
+                </article>
+                <article class="card card_grid_itemT card_theme_regular card_alignment_vertical
+                card_width_m">
+                    <h2 class="card__plan">Master</h2>
+                    <h3 class="card__price card__price_color_dark" data-plan="master">
+                        39.99
+                    </h3>
+                    <ul class="card-characteristics card-characteristics_align_vertical">
+                        <li class="card-characteristics__item">2 TB Storage</li>
+                        <li class="card-characteristics__item card-characteristics__item_middle">10 Users Allowed</li>
+                        <li class="card-characteristics__item">Send up to 20 GB</li>
+                    </ul>
+                    <button class="card__button card__button_theme_regular card__button_font">Learn More</button>
+                </article>
+            </div>
+        </main>
+    </div>
+    <script src="./js/toggle-btn.js"></script>
+</body>
+
+</html>

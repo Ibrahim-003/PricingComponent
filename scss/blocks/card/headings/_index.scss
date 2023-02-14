@@ -1,0 +1,7 @@
+.card__price {
+
+    // card__price modifier
+    &_color_dark {
+        color: var(--dGrayishB);
+    }
+}

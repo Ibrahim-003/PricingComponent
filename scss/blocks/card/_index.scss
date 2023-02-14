@@ -1,0 +1,48 @@
+@forward "cardBtn";
+@forward "headings";
+@forward "characteristics";
+@import "../../abstracts";
+
+// modifier card block
+.card {
+  &_alignment_vertical {
+    @include flex($gap: 2.5rem);
+  }
+
+  &_width_m {
+    width: min(100%, 400px);
+  }
+
+  &_theme_regular {
+    background-color: var(--white);
+  }
+
+  &_theme_active {
+    background: linear-gradient(180deg, var(--primaryBackground));
+    color: var(--vlGrayishB);
+  }
+}
+
+// children card block
+.card {
+  padding: 3rem 1rem;
+  border-radius: 0.5rem;
+
+  &__plan {
+    font-size: 1.1rem;
+  }
+
+  &__price {
+    font-size: 4.5rem;
+    @include flex($direction: row);
+
+    &::before {
+      content: "$";
+      font-size: 3rem;
+    }
+  }
+
+  &__sign {
+    font-size: 2.5rem;
+  }
+}

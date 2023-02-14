@@ -1,0 +1,25 @@
+@import '../../abstracts';
+
+.main {
+    // modifier
+    &_align_vertical {
+        @include flex($gap: 2.5rem);
+    }
+
+    &_space_in {
+        padding-block: min(7vh, 6rem);
+    }
+    &_size {
+        min-height: 100vh;
+    }
+
+    // children
+    &__toggle-master {
+        margin-bottom: 2.5rem;
+        @include flex(row);
+    }
+
+    &__plan {
+        color: $iGrayishB;
+    }
+}

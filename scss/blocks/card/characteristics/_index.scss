@@ -1,0 +1,23 @@
+@import "../../../abstracts";
+
+.card-characteristics {
+  border-collapse: collapse;
+
+  // characteristics modifier
+  &_align_vertical {
+    @include flex();
+  }
+
+  // characteristics children
+  &__item {
+    width: inherit;
+    text-align: center;
+    border-top: 1px solid var(--iGrayishB);
+    border-bottom: 1px solid var(--iGrayishB);
+    padding: 1.25rem 0;
+  }
+
+  &__item_middle {
+    border: none;
+  }
+}

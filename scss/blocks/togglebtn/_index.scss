@@ -1,0 +1,50 @@
+@import "../../abstracts";
+
+.toggle-btn {
+  display: inline;
+
+  &__container {
+    display: inline-flex;
+    position: relative;
+    width: 3.5rem;
+    height: 2rem;
+    margin: 0 0.85rem;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__slider {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    width: inherit;
+    padding: 0 0.2rem;
+    cursor: pointer;
+    background: linear-gradient(90deg, $primaryBackground);
+    transition: 0.4s;
+    border-radius: 2rem;
+
+    &::before {
+        content: '';
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: $white;
+        border-radius: 50%;
+        transition: 0.4s;
+    }
+  }
+
+  &__input:checked + &__slider {
+    background: linear-gradient(270deg, $primaryBackground);
+  }
+
+  &__input:checked + &__slider::before {
+    transform: translateX(-1.55rem);
+  }
+
+
+
+}
